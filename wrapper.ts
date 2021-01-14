@@ -45,12 +45,7 @@ export class Wrapper {
   get(path: string, ...handlers: Function[]): void {
     methodHandlerFactory(this.handlers, 'get')(path, handlers);
   }
+  post(path: string, ...handlers: Function[]) {
+    methodHandlerFactory(this.handlers, 'post')(path, handlers);
+  }
 }
-
-
-
-
-
-
-
-
